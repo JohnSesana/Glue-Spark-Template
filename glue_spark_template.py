@@ -5,7 +5,7 @@ from awsglue.context import GlueContext
 from pyspark.context import SparkContext
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import lit
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, date_format, concat, year, lpad, weekofyear
 from pyspark import SparkConf
 
 # Initialize Spark configuration
