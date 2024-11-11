@@ -4,9 +4,8 @@ from awsglue.utils import getResolvedOptions
 from awsglue.context import GlueContext
 from pyspark.context import SparkContext
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import lit
-from datetime import date, datetime, timedelta, date_format, concat, year, lpad, weekofyear
-from pyspark import SparkConf
+from pyspark.sql.functions import lit, date_format, concat, year, lpad, weekofyear
+from datetime import date, datetime, timedelta
 
 # Initialize Spark configuration
 conf = SparkConf() \
